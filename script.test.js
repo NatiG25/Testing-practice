@@ -8,7 +8,7 @@ test('Number of characters cat to equal 3', () => {
 // Task 2 
 const reverseString = require('./modules/reverse');
 
-test('Reverse of car to equal rac', () => {
+test('Reverse of mokey to equal yeknom', () => {
   expect(reverseString('monkey')).toBe('yeknom');
 })
 
@@ -27,25 +27,33 @@ describe('Addition', () => {
 });
 
 describe('Subtraction', () => {
-  test('Subtract 90 - 2', () => expect(calculte.subtract()).toBe(88));
-  test('Subtract 21 - 7', () => expect(calculte2.subtract()).toBe(14));
-  test('Subtract 48 - 6', () => expect(calculte3.subtract()).toBe(42));
+  test('Subtract numbers properly', () => {
+    expect(calculte.subtract()).toBe(88);
+    expect(calculte2.subtract()).toBe(14);
+    expect(calculte3.subtract()).toBe(42);
+  });
 });
 
 describe('Division', () => {
-  test('divide 90 / 2', () => expect(calculte.divide()).toBe(45));
-  test('divide 21 / 7', () => expect(calculte2.divide()).toBe(3));
-  test('divide 48 / 6', () => expect(calculte3.divide()).toBe(8));
+  test('divide 90 / 2', () => {
+    expect(calculte.divide()).toBe(45);
+    expect(calculte2.divide()).toBe(3);
+    expect(calculte3.divide()).toBe(8);
+  })
+
 });
 
 describe('Multiplication', () => {
-  test('multiply 90 * 2', () => expect(calculte.multiply()).toBe(180));
-  test('multiply 21 * 7', () => expect(calculte2.multiply()).toBe(147));
-  test('multiply 48 * 6', () => expect(calculte3.multiply()).toBe(288));
+  test('multiply 90 * 2', () => {
+    expect(calculte.multiply()).toBe(180);
+    expect(calculte2.multiply()).toBe(147);
+    expect(calculte3.multiply()).toBe(288);
+  })
+
 });
 
-// Task 4
-test('Change hello to Hello', () => {
+// // Task 4
+test('Capitalizing first letters', () => {
   const capitalize = string => string[0].toUpperCase() + string.substring(1);
   expect(capitalize('hello')).toBe('Hello');
   expect(capitalize('cat')).toBe('Cat');
