@@ -55,6 +55,6 @@ describe('Multiplication', () => {
 // // Task 4
 test('Capitalizing first letters', () => {
   const capitalize = string => string[0].toUpperCase() + string.substring(1);
-  expect(capitalize('hello')).toBe('Hello');
+  expect(capitalize('hello')).toBe('ello');
   expect(capitalize('cat')).toBe('Cat');
 })
